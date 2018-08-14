@@ -6,7 +6,6 @@ __author__ = """Rajesh Rao"""
 __email__ = 'rajeshmprao@gmail.com'
 __version__ = '0.1.0'
 
-from . import connections
-from . import get
+from .fno_symbol import fno_symbol
 
-__all__ = [connections, get]
+__all__ = ['fno_symbol']

@@ -28,7 +28,6 @@ def cursor_conn(username, password, host):
     database_password = password
     database_ip = host
 
-    # try:
     conn = pymysql.connect(host=database_ip,
                            user=database_user,
                            password=database_password,
