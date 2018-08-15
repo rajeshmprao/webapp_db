@@ -28,7 +28,8 @@ def futures_eod_data(cursor, data):
     try:
         cursor.execute(insert_query, params)
     except Exception as e:
-        # raise
+        print(cursor.mogrify(insert_query, params))
+        raise
         if e.args[0] == 1062:
             pass
         else:
